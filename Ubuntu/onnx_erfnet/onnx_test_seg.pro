@@ -13,7 +13,7 @@ SOURCES += main.cpp
 INCLUDEPATH += /usr/include \
                /usr/include/opencv \
                /usr/include/opencv2 \
-               /media/usr523/000903F80002AA1E/cxy/1908/1909/onnxruntime/include/onnxruntime
+               ../../include/onnxruntime
 
 LIBS += /usr/lib/x86_64-linux-gnu/libopencv_highgui.so \
         /usr/lib/x86_64-linux-gnu/libopencv_core.so    \
