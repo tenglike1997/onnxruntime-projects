@@ -1,5 +1,3 @@
-# onnxruntime projects
-
 ## Start
 
 1, Download the thirdparty denpendencies from **, and extract them to the workplace.
