@@ -10,11 +10,13 @@ The programming language is C++ and The platform is Visual Studio. I have finish
 
 ##### Windows
 
-|   Network   | Classes | Input resolution | Batch size | Iterations | CPU Running time | GPU Running time | TRT Running time* |
-| :---------: | :-----: | :--------------: | :--------: | :--------: | :--------------: | :--------------: | :---------------: |
-|  MobileNet  |  1000   |     224x224      |     1      |    1000    |      19.56s      |      4.15s       |       1.05s       |
-|   ERFNet    |    4    |     640x480      |     1      |    1000    |      >100s       |      12.93s      |       5.6s        |
-| Tiny_YOLOv2 |   20    |     416x416      |     1      |    1000    |      40.64s      |      2.97s       |       1.92s       |
+|               Network               | Classes | Input resolution | Batch size | Iterations | CPU Running time | GPU Running time | TRT Running time* |
+| :---------------------------------: | :-----: | :--------------: | :--------: | :--------: | :--------------: | :--------------: | :---------------: |
+|              MobileNet              |  1000   |     224x224      |     1      |    1000    |      19.56s      |      4.15s       |       1.05s       |
+|               ERFNet                |    4    |     640x480      |     1      |    1000    |      >100s       |      12.93s      |       5.6s        |
+|             Tiny_YOLOv2             |   20    |     416x416      |     1      |    1000    |      40.64s      |      2.97s       |       1.92s       |
+| Super Resolution with sub-pixel CNN |    -    |     224x224      |     1      |    1000    |      34.14s      |      1.79s       |       1.14s       |
+|     Fast Neural Style Transfer      |    -    |     224x224      |     1      |    1000    |      87.99s      |      4.64s       |         -         |
 
 ##### Ubuntu
 
@@ -40,10 +42,6 @@ The onnx model is Tiny YOLOv2.You can download it in the link mentioned afore.
 ---
 The onnx model is Fast Neural Style Transfer. You can download it in the link mentioned afore.
 
-*TODO
-
 ### Super resolution
 ---
 The onnx model is Super Resolution with sub-pixel CNN. You can download it in the link mentioned afore.
-
-*TODO
