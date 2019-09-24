@@ -10,10 +10,11 @@ The programming language is C++ and The platform is Visual Studio. I have finish
 
 ##### Windows
 
-|  Network  | Classes | Input resolution | Batch size | Iterations | CPU Running time | GPU Running time | TRT Running time* |
-| :-------: | :-----: | :--------------: | :--------: | :--------: | :--------------: | :--------------: | :---------------: |
-| MobileNet |  1000   |     224x224      |     1      |    1000    |      19.56s      |      4.15s       |       1.05s       |
-|  ERFNet   |    4    |     640x480      |     1      |    1000    |      >100s       |      12.93s      |       5.6s        |
+|   Network   | Classes | Input resolution | Batch size | Iterations | CPU Running time | GPU Running time | TRT Running time* |
+| :---------: | :-----: | :--------------: | :--------: | :--------: | :--------------: | :--------------: | :---------------: |
+|  MobileNet  |  1000   |     224x224      |     1      |    1000    |      19.56s      |      4.15s       |       1.05s       |
+|   ERFNet    |    4    |     640x480      |     1      |    1000    |      >100s       |      12.93s      |       5.6s        |
+| Tiny_YOLOv2 |   20    |     416x416      |     1      |    1000    |      40.64s      |      2.97s       |       1.92s       |
 
 ##### Ubuntu
 
@@ -23,6 +24,8 @@ The programming language is C++ and The platform is Visual Studio. I have finish
 |  ERFNet   |    4    |     640x480      |     1      |    1000    |      >100s       |      13.56s      |       4.90s       |
 
 *The TensorRT engine is compiled with FP16 settings. Just add "trt_builder->setFp16Mode(true);" to 339 line of tensorrt_execution_provider.cc, if you build libonnxruntime yourself.
+
+**This experiment is implemented on NVIDIA 2080Ti.
 
 ### Classification
 ---
