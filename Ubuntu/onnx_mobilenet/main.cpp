@@ -57,6 +57,7 @@ int main(int argc, char *argv[])
     Mat dst(row, col, CV_8UC3);
     Mat dst2;
     resize(img, dst, Size(row, col));
+    cvtColor(dst, dst, CV_BGR2RGB);
 
     float* output = input_image_.data();
     fill(input_image_.begin(), input_image_.end(), 0.f);
