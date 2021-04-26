@@ -231,6 +231,7 @@ int main()
 	Mat img = imread("C:\\Users\\admin\\Desktop\\onnx测试图片\\VOC\\000011.jpg");
 	Mat dst(row, col, CV_8UC3);
 	resize(img, dst, Size(col, row));
+	cvtColor(dst, dst, CV_BGR2RGB);
 
 	float* output = input_image_.data();
 	fill(input_image_.begin(), input_image_.end(), 0.f);
